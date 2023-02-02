@@ -93,11 +93,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-<<<<<<< HEAD
     "/node_modules",
     "build"
-=======
-    "/node_modules"
->>>>>>> 0ae780b8d89f9dabdcda82b4d654d39aa38c2fef
   ]
 }

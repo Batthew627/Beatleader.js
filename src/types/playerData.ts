@@ -1,0 +1,80 @@
+export interface player{
+        "id": string,
+        "name": string,
+        "platform": string,
+        "avatar": string,
+        "country": string,
+        "pp": number,
+        "rank": number,
+        "countryRank": number,
+        "role": string,
+        "clans": Clans[],
+        "scoreStats": ScoreStats,
+        "lastWeekPp": number,
+        "lastWeekRank": number,
+        "lastWeekCountryRank": number,
+        "mapperId": number,
+        "banned": boolean,
+        "inactive": boolean,
+        "externalProfileUrl": string,
+        "badges": Badges[],
+      }
+
+
+export interface Clans{
+        "id": number,
+        "tag": string,
+        "color": string
+}
+export interface ScoreStats{
+    "id": number,
+    "totalScore": number,
+    "totalUnrankedScore": number,
+    "totalRankedScore": number,
+    "lastScoreTime": number,
+    "lastUnrankedScoreTime": number,
+    "lastRankedScoreTime": number,
+    "averageRankedAccuracy": number,
+    "averageWeightedRankedAccuracy": number,
+    "averageUnrankedAccuracy": number,
+    "averageAccuracy": number,
+    "medianRankedAccuracy": number,
+    "medianAccuracy": number,
+    "topRankedAccuracy": number,
+    "topUnrankedAccuracy": number,
+    "topAccuracy": number,
+    "topPp": number,
+    "topBonusPP": number,
+    "peakRank": number,
+    "rankedMaxStreak": number,
+    "unrankedMaxStreak": number,
+    "maxStreak": number,
+    "averageLeftTiming": number,
+    "averageRightTiming": number,
+    "rankedPlayCount": number,
+    "unrankedPlayCount": number,
+    "totalPlayCount": number,
+    "averageRankedRank": number,
+    "averageWeightedRankedRank": number,
+    "averageUnrankedRank": number,
+    "averageRank": number,
+    "sspPlays": number,
+    "ssPlays": number,
+    "spPlays": number,
+    "sPlays": number,
+    "aPlays": number,
+    "topPlatform": string,
+    "topHMD": number,
+    "dailyImprovements": number,
+    "authorizedReplayWatched": number,
+    "anonimusReplayWatched": number,
+    "watchedReplays": number
+}
+
+
+export interface Badges{
+        "id": number,
+        "description": string,
+        "image": string,
+        "link": string
+}

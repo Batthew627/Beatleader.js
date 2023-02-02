@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon --config nodemon.json src/test.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,14 @@
   "homepage": "https://github.com/Batthew627/Beatleader.js#readme",
   "devDependencies": {
     "@types/node": "^18.11.18",
-<<<<<<< HEAD
     "eslint": "^8.32.0",
     "eslint-config-google": "^0.14.0",
-=======
->>>>>>> 0ae780b8d89f9dabdcda82b4d654d39aa38c2fef
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.2.3",
+    "axios-retry": "^3.4.0"
   }
 }
